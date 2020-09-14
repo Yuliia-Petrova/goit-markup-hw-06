@@ -488,20 +488,25 @@ footer {
   margin-bottom: 0;
 }
 
+/* footer-left */
+
 .footer-left {
   margin-right: 70px;
 }
 
 footer .container {
-  padding: 60px 20px;
+  padding: 60px 15px;
   display: flex;
   align-items: baseline;
 }
+
+/* footer-middle */
 
 .footer-middle {
   justify-content: center;
   max-width: 206px;
   flex-wrap: wrap;
+  margin-right: 93px;
 }
 
 .join-list {
@@ -542,6 +547,55 @@ footer .container {
   text-transform: uppercase;
   color: var(--additional-color);
   margin: 0 0 20px;
+}
+
+/* footer-right */
+
+.footer-right {
+  width: 570px;
+}
+
+.email-field {
+  width: 358px;
+  background-color: transparent;
+  padding: 15px 0 15px 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.subscribe-button {
+  width: 200px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  padding: 10px 29px 10px 28px;
+  color: var(--additional-color);
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  /* margin-left: 12px; */
+}
+
+.subscribe-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  text-transform: uppercase;
+  color: var(--additional-color);
+  margin: 0 0 20px;
+}
+
+.subscribe-icon {
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: var(--additional-color);
 }
 
 /* Модальное окно */

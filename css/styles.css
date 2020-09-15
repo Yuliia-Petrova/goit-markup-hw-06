@@ -567,7 +567,6 @@ footer .container {
 }
 
 .subscribe-button {
-  width: 200px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -578,7 +577,7 @@ footer .container {
   background-color: var(--accent-color);
   border: none;
   cursor: pointer;
-  /* margin-left: 12px; */
+  margin-left: 12px;
 }
 
 .subscribe-text {
@@ -648,6 +647,34 @@ footer .container {
   outline: none;
 }
 
+.modal-header {
+  display: inline-flex;
+}
+
+.modal-heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  justify-content: center;
+}
+
+.name-input {
+  margin-top: 20px;
+}
+
+.form-field {
+  margin: 10px 0 4px;
+}
+
+.input-forms {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-field input {
+  width: 448px;
+}
 /* Portfolio */
 
 header {

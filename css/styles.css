@@ -7,6 +7,7 @@
   --bg-color: #2f303a;
   --primary-bg-color: #f5f4fa;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
 }
 
 body {
@@ -611,13 +612,16 @@ footer .container {
 }
 
 .modal {
-  background-color: var(--primary-bg-color);
   width: 528px;
   height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: var(--additional-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .backdrop.is-hidden {
@@ -627,6 +631,7 @@ footer .container {
 
 .cross-icon {
   fill: #000000;
+  transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .modal-close-button {
@@ -636,7 +641,6 @@ footer .container {
   display: block;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-left: auto;
   margin-top: 8px;
   margin-right: 8px;
   cursor: pointer;
@@ -647,23 +651,24 @@ footer .container {
   outline: none;
 }
 
+.modal-close-button:hover svg {
+  fill: var(--accent-color);
+}
+
 .modal-header {
-  display: inline-flex;
+  display: flex;
 }
 
 .modal-heading {
+  color: var(--title-color);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  justify-content: center;
-}
-
-.name-input {
-  margin-top: 20px;
-}
-
-.form-field {
-  margin: 10px 0 4px;
+  width: 448px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: auto;
+  text-align: center;
 }
 
 .input-forms {
@@ -672,9 +677,87 @@ footer .container {
   margin-right: auto;
 }
 
+.input-field {
+  margin-top: 10px;
+  position: relative;
+}
+
+.input-field svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 32px);
+  width: 18px;
+  height: 18px;
+  fill: var(--title-color);
+  transition: fill var(--transition-duration) var(--timing-function);
+}
+
+.input-field:hover svg,
+.input-field:focus svg {
+  fill: var(--accent-color);
+}
+
 .input-field input {
   width: 448px;
+  height: 40px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border var(--transition-duration) var(--timing-function);
 }
+
+.input-field:hover input,
+.input-field:focus input,
+.input-field:hover textarea,
+.input-field:focus textarea {
+  border: 1px solid var(--accent-color);
+}
+
+.input-field label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.input-field textarea {
+  width: 448px;
+  padding: 0;
+  margin: 4px 0 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.input-field::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.policy-box {
+  margin-bottom: 30px;
+}
+
+.policy-box label {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.submit-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  height: 50px;
+  padding: 10px 55px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--additional-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
 /* Portfolio */
 
 header {

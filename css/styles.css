@@ -87,7 +87,7 @@ p {
   text-decoration: none;
   display: block;
   padding: 32px 0;
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function);
 }
 
 .site-nav .link:hover,
@@ -115,7 +115,7 @@ p {
   border-radius: 2px;
   /* opacity: 0; */
   /* transform: scaleX(0);
-  transition: transform 250ms var(--timing-function); */
+  transition: transform var(--transition-duration) var(--timing-function); */
 }
 
 /* .link.current:hover::after {
@@ -139,14 +139,14 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function);
 }
 
 .envelope-icon,
 .tel-icon {
   margin-right: 10px;
   fill: #757575;
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .contact-link:hover,
@@ -390,13 +390,13 @@ p {
   height: 44px;
   padding: 12px;
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--transition-duration) var(--timing-function);
 }
 
 .social-links-icon,
 .join-icon {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .social-link:hover,
@@ -434,12 +434,12 @@ p {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color var(--transition-duration) var(--timing-function);
 }
 
 .client-icon {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .client-link:hover,
@@ -528,7 +528,7 @@ footer .container {
   padding: 12px;
   background-color: #ffffff1a;
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--transition-duration) var(--timing-function);
 }
 
 .join-link:hover,
@@ -608,7 +608,7 @@ footer .container {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity var(--transition-duration) var(--timing-function);
 }
 
 .modal {
@@ -795,9 +795,9 @@ button {
   font-family: inherit;
   font-weight: 500;
   padding: 6px 22px;
-  transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function),
-    box-shadow 250ms var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function),
+    background-color var(--transition-duration) var(--timing-function),
+    box-shadow var(--transition-duration) var(--timing-function);
 }
 
 .filter:hover,
@@ -827,7 +827,7 @@ button {
   pointer-events: none;
   bottom: 0;
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--transition-duration) var(--timing-function);
 }
 
 .projects-link:hover .card-text {
@@ -844,7 +844,7 @@ button {
   margin: 0 30px 30px 0;
   width: calc((100% - 30px * 2) / 3);
   border: 1px solid #eeeeee;
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow var(--transition-duration) var(--timing-function);
 }
 
 .projects-element:nth-child(3n) {

@@ -704,6 +704,7 @@ footer .container {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border var(--transition-duration) var(--timing-function);
+  cursor: pointer;
 }
 
 .input-field:hover input,
@@ -727,11 +728,13 @@ footer .container {
   border-radius: 4px;
 }
 
-.input-field::placeholder {
+.input-field textarea::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  padding-top: 12px;
+  padding-left: 16px;
 }
 
 .policy-box {

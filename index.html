@@ -435,6 +435,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal  -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-header">
@@ -482,11 +484,17 @@
             </div>
 
             <div class="policy-box">
-              <input type="checkbox" name="policy" id="policy" />
-              <label for="policy"
-                >Соглашаюсь с рассылкой и принимаю
-                <a href="">Условия договора</a></label
-              >
+              <label class="policy-label" for="policy">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                />
+                <span class="policy-icon"></span>
+                Соглашаюсь с рассылкой и принимаю
+                <a href="" class="agreement-link">Условия договора</a>
+              </label>
             </div>
 
             <button type="submit" class="submit-button">Отправить</button>

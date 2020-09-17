@@ -713,9 +713,7 @@ footer .container {
 }
 
 .input-field:hover .input,
-.input-field:focus .input,
-.input-field:hover .textarea,
-.input-field:focus .textarea {
+.input-field:hover .textarea {
   border: 1px solid var(--accent-color);
   outline: var(--accent-color);
 }
@@ -723,7 +721,7 @@ footer .container {
 .input-field .input:focus,
 .input-field .textarea:focus {
   border: 1px solid var(--accent-color);
-  outline: none;
+  outline: var(--accent-color);
 }
 
 .input-field .input:focus + svg {

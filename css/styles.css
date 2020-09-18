@@ -759,7 +759,7 @@ footer .container {
   font-size: 14px;
   line-height: 1.71;
 }
-
+/* 
 .policy-icon {
   display: inline-block;
   margin-right: 8px;
@@ -767,7 +767,18 @@ footer .container {
   height: 15px;
   border: 2px solid var(--title-color);
   border-radius: 2px;
+} */
+
+.policy-label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
 }
+
 .checkbox {
   appearance: none;
   -webkit-appearance: none;
@@ -775,7 +786,7 @@ footer .container {
   position: absolute;
 }
 
-.checkbox:checked + .policy-icon {
+.checkbox:checked + .policy-label::before {
   background-color: var(--accent-color);
   background-image: url(../images/policy-icon.svg);
   background-size: contain;
